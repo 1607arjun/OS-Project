@@ -10,5 +10,8 @@ int main()
 	printf("Formula used for paging demand\n\n");
 	printf("(1 - pagef) * memat + (psuc * pagef * 20000000)+ ((1-psuc) * pagef * 8000000) = inteffat\n");
 	printf("(1 - pagef) * 100 + (0.7 * pagef * 20000000)+ (0.3 * pagef * 8000000)= 200\n\n");
-   
+        pagef=(100/((psuc*20000000 )+ ((1-psuc)*8000000)-100 ));
+	printf("\n MAMXIMUM ACCEPTABLE PAGE FAULT RATE=\n%f",pagef);
+	double p1=pagef*100;
+	printf("\nMAMXIMUM ACCEPTABLE PAGE FAULT RATE IN PERCENTAGE= \n%f",p1);
 }
