@@ -35,13 +35,11 @@ int t1=0;
 int t2=1;
 int nextTerm;
 int n=shared;
-printf("%d -> ",t1);
-printf("%d -> ",t2);
     for (i = 1; i <=n; i++)
     {
+printf("%d ->",t1);
         nextTerm = t1 + t2;
         t1 = t2;
         t2 = nextTerm;
-printf("%d -> ",nextTerm);
     }
 }
